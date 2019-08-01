@@ -8,9 +8,18 @@ const routes: Routes = [
       "./product-listing/product-listing.module#ProductListingModule"
   },
   {
+    path: "",
+    loadChildren: "./search/search.module#SearchModule"
+  },
+  {
     path: ":productSlug",
     loadChildren: "./product-detail/product-detail.module#ProductDetailModule"
   },
+  {
+    path: ":userSlug/followers",
+    loadChildren: "./followers-page/followers-page.module#FollowersPageModule"
+  },
+
   {
     path: "**",
     redirectTo: "404"

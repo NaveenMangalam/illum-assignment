@@ -1,11 +1,10 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { FollewersComponent } from "./follewers/follewers.component";
-
+import { SearchComponent } from "./search/search.component";
 const routes: Routes = [
   {
-    path: "",
-    component: FollewersComponent
+    path: "search",
+    component: SearchComponent
   }
 ];
 
@@ -13,4 +12,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class FollowersPageRoutingModule {}
+export class SearchRoutingModule {}

@@ -9,9 +9,13 @@ import { Subject } from "rxjs";
 })
 export class ProductListingComponent implements OnInit, OnDestroy {
   listingData: Array<object>;
+  user: object;
   private destroy$: Subject<boolean>;
   constructor(private feedService: FeedService) {
     this.listingData = [];
+    this.user = {
+      name: ""
+    };
     this.destroy$ = new Subject();
   }
 
@@ -23,9 +27,12 @@ export class ProductListingComponent implements OnInit, OnDestroy {
         takeUntil(this.destroy$)
       )
       .subscribe(data => {
-        console.log(data);
         this.listingData = data;
       });
+  }
+  search(user: string) {
+    const userData = user;
+    this.feedService.searchStringContent(userData);
   }
   ngOnDestroy() {
     this.destroy$.next(true);

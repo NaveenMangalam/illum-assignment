@@ -1,12 +1,14 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+
 import {
   MatButtonModule,
   MatCardModule,
+  MatFormFieldModule,
   MatCheckboxModule,
   MatDialogModule,
-  MatFormFieldModule,
   MatInputModule,
   MatRadioModule,
   MatRippleModule,
@@ -27,7 +29,8 @@ import {
     MatRippleModule,
     MatSelectModule,
     MatSnackBarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   exports: [
     CommonModule,
@@ -41,7 +44,8 @@ import {
     MatRippleModule,
     MatSelectModule,
     MatSnackBarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ]
 })
 export class SharedModule {}
