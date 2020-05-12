@@ -1,0 +1,23 @@
+.product-listing-section {
+  .search-user {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    .form-element {
+      width: 90%;
+      margin: auto;
+      button {
+        padding: 5px 20px;
+      }
+    }
+  }
+  .listing-username {
+    text-transform: capitalize;
+    text-align: left;
+  }
+  .more-info {
+    padding: 0;
+    span {
+      padding: 5px 10px;
+    }
+  }
+}

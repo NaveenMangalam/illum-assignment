@@ -1,0 +1,43 @@
+<section class="product-listing-section">
+  <form name="postForm" class="search-user" #postForm="ngForm">
+    <mat-form-field class="form-element" appearance="outline">
+      <mat-label class="form-label">Enter Name</mat-label>
+      <input
+        matInput
+        class="inputText"
+        type="text"
+        title="Name"
+        [(ngModel)]="user['name']"
+        name="name"
+        #name="ngModel"
+      />
+    </mat-form-field>
+    <button
+      routerLink="/search"
+      [queryParams]="{ r: user['name'] }"
+      color="primary"
+      mat-raised-button
+      (click)="search(user['name'])"
+    >
+      SEARCH CONTINUE
+    </button>
+  </form>
+  <div fxLayout="row wrap" fxLayoutAlign="center center">
+    <mat-card class="example-card" *ngFor="let feed of listingData">
+      <img mat-card-image src="{{ feed['avatar_url'] }}" alt="" />
+      <mat-card-content>
+        <p class="listing-username">
+          {{ feed["login"] }}
+        </p>
+        <button
+          class="more-info"
+          color="primary"
+          mat-raised-button
+          [routerLink]="['', feed['login']]"
+        >
+          <span>More Info</span>
+        </button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

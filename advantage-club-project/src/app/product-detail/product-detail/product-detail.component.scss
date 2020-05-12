@@ -1,0 +1,94 @@
+.profile-section {
+  .profile-container {
+    .profile-cover-container {
+      .cover-image {
+        max-width: 100%;
+        max-height: 443px;
+      }
+      .content-menu {
+        background-color: #fff;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 60px;
+        margin-left: 30%;
+        li {
+          display: inline-block;
+          list-style: none;
+          text-align: center;
+          padding: 0 8%;
+          cursor: pointer;
+          .label {
+            color: #657786;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 0.02em;
+            padding-bottom: 10px;
+            display: block;
+            transition: color 0.15s ease-in-out;
+          }
+          .info {
+            color: #1da1f2;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 3px;
+            display: block;
+            transition: color 0.15s ease-in-out;
+          }
+        }
+      }
+      .cover-profile-image {
+        position: relative;
+        width: 30%;
+        text-align: center;
+        margin: -120px 0 20px;
+        .profile-image {
+          background: #fff;
+          border: 1px solid #e6e7e8;
+          border-radius: 100%;
+          height: 132px;
+          margin: auto;
+          padding: 5px;
+          width: 132px;
+          img {
+            background: #fff;
+            border: 1px solid #e6e7e8;
+            border-radius: 50%;
+            margin: auto;
+            width: 130px;
+            height: 130px;
+          }
+        }
+        .profile-name {
+          color: #787878;
+          position: relative;
+          top: -20px;
+          h3 {
+            font-size: 30px;
+            margin-bottom: 0px;
+            text-transform: capitalize;
+          }
+        }
+        .description {
+          line-height: 22px;
+          padding: 0 3em;
+          color: #4d4d4d;
+          font-size: 16px;
+        }
+      }
+    }
+    .profile-heading {
+      font-size: 30px;
+      text-align: center;
+      color: #787878;
+      margin-top: 40px;
+    }
+  }
+  .mobile-profile-container {
+    .profile-heading {
+      font-size: 22px;
+      text-align: center;
+      color: #787878;
+      text-transform: uppercase;
+    }
+  }
+}

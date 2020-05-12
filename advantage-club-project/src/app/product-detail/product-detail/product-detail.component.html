@@ -1,0 +1,44 @@
+<section class="profile-section">
+  <div class="profile-container">
+    <div class="profile-cover-container">
+      <img
+        class="cover-image"
+        src="https://pbs.twimg.com/profile_banners/3146118405/1543927110/1500x500"
+        alt=""
+      />
+      <div class="content-menu">
+        <ul>
+          <li>
+            <span class="label">Following</span>
+            <span class="following info">{{ detailData["following"] }}</span>
+          </li>
+          <li [routerLink]="['', slug, 'followers']">
+            <span class="label">Followers</span>
+            <span class="following info">{{ detailData["followers"] }}</span>
+          </li>
+          <li *ngIf="detailData && detailData['company'] !== null">
+            <span class="label">Company</span>
+            <span class="following info">{{ detailData["company"] }}</span>
+          </li>
+          <li *ngIf="detailData && detailData['email']">
+            <span class="label">Email</span>
+            <span class="following info">{{ detailData["email"] }}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="cover-profile-image">
+        <div class="profile-image">
+          <img src="{{ detailData['avatar_url'] }}" />
+        </div>
+        <div class="profile-name">
+          <h3>{{ detailData["name"] }}</h3>
+          <p fxLayout="row" fxLayoutAlign="center center">
+            <i class="material-icons"> location_on </i
+            >{{ detailData["location"] }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="width:65%;border-top: 1px solid #e4e4e4;" />
+</section>

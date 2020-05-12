@@ -1,0 +1,29 @@
+<section class="followers-section">
+  <div class="followers">
+    <h1>{{ slug }} Followers</h1>
+    <div
+      class="followers-list"
+      *ngFor="let followerList of followersData"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      [routerLink]="['', followerList['login']]"
+    >
+      <div
+        class="followers-image layout"
+        xLayout="column"
+        fxLayoutAlign="start center"
+        fxLayoutAlign="space-evenly center"
+      >
+        <img src="{{ followerList['avatar_url'] }}" />
+      </div>
+      <div
+        class="followers-content layout"
+        xLayout="column"
+        fxLayoutAlign="start centr"
+        fxLayoutAlign="space-evenly center"
+      >
+        <div class="followers-name">{{ followerList["login"] }}</div>
+      </div>
+    </div>
+  </div>
+</section>
