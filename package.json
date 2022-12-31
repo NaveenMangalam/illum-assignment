@@ -45,7 +45,7 @@
   "devDependencies": {
     "@angular-builders/custom-webpack": "^7.2.0",
     "@angular-builders/dev-server": "^7.2.1",
-    "@angular-devkit/build-angular": "^0.12.1",
+    "@angular-devkit/build-angular": "^15.0.4",
     "@angular/cli": "~7.2.1",
     "@angular/compiler-cli": "^7.2.0",
     "@angular/language-service": "~7.2.0",
@@ -70,7 +70,7 @@
     "pretty-quick": "^1.10.0",
     "protractor": "~5.4.2",
     "rxjs-tslint": "^0.1.6",
-    "ts-loader": "^5.3.3",
+    "ts-loader": "^9.4.2",
     "ts-node": "~7.0.1",
     "tsickle": ">=0.34.0",
     "tslib": "^1.9.0",
@@ -78,6 +78,6 @@
     "tslint-config-prettier": "^1.17.0",
     "tslint-sonarts": "^1.8.0",
     "typescript": "~3.2.2",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^5.0.1"
   }
 }
